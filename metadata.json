@@ -1,0 +1,6 @@
+{
+  "name": "AI Course Advisor Chatbot",
+  "description": "An AI-powered chatbot that recommends marketing courses to candidates based on their personal and professional background. Users can also browse and search for courses manually.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
