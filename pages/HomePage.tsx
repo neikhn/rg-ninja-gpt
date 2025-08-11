@@ -18,7 +18,7 @@ interface HomePageProps {
 const HomePage: React.FC<HomePageProps> = ({ courses, onSelectCourse }) => {
   return (
     <div className="flex h-[calc(100vh-8rem)] overflow-hidden">
-      <div className="border-r border-gray-200 dark:border-gray-700">
+      <div className="w-80 p-4 border-gray-200 dark:border-gray-700">
         <ChatSidebar />
       </div>
       <div className="flex-1 flex flex-col items-center justify-center w-full p-4">
