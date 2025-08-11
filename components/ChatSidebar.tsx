@@ -33,16 +33,18 @@ const ChatSidebar: React.FC = () => {
     };
 
     return (
-        <div className="w-72 bg-gray-100 rounded-2xl dark:bg-gray-800 p-3 flex flex-col h-full border-r border-gray-200 dark:border-gray-700">
-            <h2 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4 px-2">{t('sidebar.title')}</h2>
-            <button
-                onClick={createSession}
-                className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-primary-hover transition-colors mb-4 shadow-sm"
-            >
-                <PlusIcon className="w-5 h-5" />
-                {t('sidebar.newConversation')}
-            </button>
-            <div className="flex-1 overflow-y-auto pr-2 custom-scrollbar">
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 flex flex-col h-full w-full">
+            <div className="p-4 border-b border-gray-200 dark:border-gray-700">
+                <h2 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4">{t('sidebar.title')}</h2>
+                <button
+                    onClick={createSession}
+                    className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-primary text-white font-semibold rounded-lg hover:bg-primary-hover transition-colors shadow-sm"
+                >
+                    <PlusIcon className="w-5 h-5" />
+                    {t('sidebar.newConversation')}
+                </button>
+            </div>
+            <div className="flex-1 overflow-y-auto p-4 custom-scrollbar">
                 {chatSessions.map(session => (
                     <div
                         key={session.id}
